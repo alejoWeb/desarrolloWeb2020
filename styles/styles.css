@@ -1,6 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
+  background-image: linear-gradient(to left bottom, #4fe010, #00d390, #00bde0, #009efe, #0075e2);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,6 +15,7 @@ h1 {
   letter-spacing: 0.5px;
   color: white;
   margin: 0;
+  display: inline-block;
   
   /* text-transform: uppercase; */
 }
@@ -33,44 +35,17 @@ figure {
   margin: 0;
 }
 
-.portfolio {
-  background: lightgrey;
-}
-
-.project {
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background: white;
-}
-
-.project-details {
-  width: 500px;
-}
-
-.project-imageContainer {
-  width: 500px;
-}
-
-.hero {
-  height: 300px;
-  background-image: url(../imgs/alejo.jpg);
-  background-color: rgb(7, 182, 7);
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  display: flex;
-  align-items: center;
-}
-
 .header {
-  background-color: rgb(12, 15, 235);
+  /* background-color: #00c767; */
   color: white;
   display: flex;
   justify-content: space-between;
   height: 90px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
   align-items: center;
 }
 
@@ -96,12 +71,55 @@ figure {
   padding: 0 10px;
 }
 .header a:hover {
-  background-color: lawngreen;
+  background-color: #00a98b;
 }
 
 .header figure img {
   margin-left: 20px;
 }
+
+.hero {
+  height: 400px;
+  /* background-image: url(../imgs/alejo.jpg); */
+  /* background-color: rgb(7, 182, 7); */
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 50%;
+}
+
+.portfolio {
+  /* background: lightgrey; */
+}
+
+.project {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: white;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-imageContainer {
+  width: 500px;
+}
+
+
 
 .footer {
   background: rgb(12, 15, 235);
